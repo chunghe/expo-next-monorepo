@@ -1,10 +1,5 @@
-import React from "react";
-import { View } from "react-native";
 
-type Props = {};
-
-export default function BaseComponent(props: Props) {
-  const {} = props;
-
-  return <View style={{ backgroundColor: "red", height: 500, width: 500 }} />;
-}
+export {default as Header} from './Header';
+export {default as Home} from './Home';
+export {default as Profile} from './Profile';
+export {default as Link} from './Link';
