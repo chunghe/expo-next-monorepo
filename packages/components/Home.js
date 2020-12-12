@@ -39,7 +39,11 @@ export default function Home(props) {
           return <View style={styles.separator} />;
         }}
         renderItem={({item}) => (
-          <Link href="profile" xStyle={styles.item} params={{coin: item}}>
+          <Link
+            screenName="CoinDetail"
+            pathname="/coin/[name]"
+            xStyle={styles.item}
+            params={{name: item}}>
             <Text>{item}</Text>
           </Link>
         )}

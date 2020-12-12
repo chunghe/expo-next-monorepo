@@ -2,13 +2,13 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-export default function Link({children, xStyle, href, params, ...restProps}) {
+export default function Link({children, xStyle, screenName, params, ...restProps}) {
   const navigation = useNavigation();
-  console.log('params', params);
+
   return (
     <TouchableOpacity
       style={xStyle}
-      onPress={() => {navigation.navigate(href, params)}}
+      onPress={() => {navigation.navigate(screenName, params)}}
       {...restProps}
     >
       <Text>{children}</Text>

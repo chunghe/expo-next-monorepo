@@ -2,19 +2,30 @@ import React from 'react';
 import {StatusBar} from 'expo-status-bar';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {StyleSheet, Text, View} from 'react-native';
-import {Home, Profile} from '@shared/components';
+import {Home, Profile, CoinDetailScreen} from '@shared/components';
 
 import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
 const BottomTab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+function HomeStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="home" component={Home} />
+      <Stack.Screen name="CoinDetail" component={CoinDetailScreen} />
+    </Stack.Navigator>
+  );
+}
 
 export default function App() {
   return (
     <NavigationContainer>
       <BottomTab.Navigator>
         <BottomTab.Screen
-          name="home"
-          component={Home}
+          name="homestack"
+          component={HomeStack}
           options={{
             title: 'Home',
           }}
