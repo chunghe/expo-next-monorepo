@@ -7,18 +7,17 @@ Minimal monorepo with
 4. yarn workspaces.
 5. react-navigation
 
-# Folders
+## preview
+https://expo-next-monorepo-mu.vercel.app/
+
+## Folders
 
 - `packages/components` (import as `@shared/components`)
 - `packages/expo-app` (this is the app you run)
 
-# Start app
+## Start app
 
 - Clone the repo
 - Run `yarn install`
 - `yarn native` to run the expo app, `yarn web` to run next.js
-
-# Edit code
-
-Open `packages/components` and start editing. Watch changes happen instantly in your app.
 
