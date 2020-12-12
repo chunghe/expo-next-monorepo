@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 function HomeStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="home" component={Home} />
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="CoinDetail" component={CoinDetailScreen} />
     </Stack.Navigator>
   );
@@ -24,14 +24,14 @@ export default function App() {
     <NavigationContainer>
       <BottomTab.Navigator>
         <BottomTab.Screen
-          name="homestack"
+          name="HomeStack"
           component={HomeStack}
           options={{
             title: 'Home',
           }}
         />
         <BottomTab.Screen
-          name="profile"
+          name="Profile"
           component={Profile}
           options={{
             title: 'Profile',
