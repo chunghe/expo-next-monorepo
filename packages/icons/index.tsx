@@ -9,7 +9,10 @@ const mapping = {
 };
 
 export default function CryptoIcons({name, ...restProps}) {
-  const Comp = mapping[name] || null;
+  const Comp = mapping[name];
 
-  return <Comp {...restProps} />;
+  if (Comp) {
+    return <Comp {...restProps} />;
+  }
+  return null
 }

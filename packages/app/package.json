@@ -16,6 +16,7 @@
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
     "@shared/components": "*",
+    "@shared/icons": "*",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
     "moment": "^2.28.0",
