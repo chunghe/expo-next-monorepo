@@ -27,9 +27,8 @@ const styles = StyleSheet.create({
   },
 });
 
-const coins = ['BTC', 'ETH', 'LTC'];
 
-export default function Home(props) {
+export default function Home({coins}) {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList

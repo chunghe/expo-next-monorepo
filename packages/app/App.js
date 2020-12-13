@@ -2,7 +2,7 @@ import React from 'react';
 import {StatusBar} from 'expo-status-bar';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {StyleSheet, Text, View} from 'react-native';
-import {Home, Profile, CoinDetailScreen} from '@shared/components';
+import {HomeScreen, Profile, CoinDetailScreen} from '@shared/components';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 function HomeStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="CoinDetail" component={CoinDetailScreen} />
     </Stack.Navigator>
   );
