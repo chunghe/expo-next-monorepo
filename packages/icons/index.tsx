@@ -1,3 +1,4 @@
+import React from 'react';
 import {default as Btc} from './Btc';
 import {default as Eth} from './Eth';
 import {default as Ltc} from './Ltc';
