@@ -6,6 +6,7 @@ Minimal monorepo with
 3. TypeScript
 4. yarn workspaces.
 5. react-navigation
+6. Next.js server-side rendering
 
 ## preview
 https://expo-next-monorepo-mu.vercel.app/
